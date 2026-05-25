@@ -37,6 +37,7 @@ interface LoginBody {
     next: NextFunction
   ) => {
     try {
+      console.log('check git');
       await authService.login(req.body);
     } catch (error) {
       next(error);
